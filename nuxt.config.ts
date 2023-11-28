@@ -1,4 +1,17 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: true }
+  devtools: { enabled: true },
+  typescript: {
+    typeCheck: true
+  },
+  modules: [
+    '@nuxtjs/tailwindcss'
+  ],
+  pages: true,
+  components: [
+    {
+      path: '~/components',
+      pathPrefix: false
+    }
+  ]
 })
