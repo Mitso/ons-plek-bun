@@ -3,7 +3,7 @@
         return ['first:pl-0', 'px-2', 'uppercase', 'text-sm', 'text-black']
     })
     const anchorElemStyle = computed(() => {
-        return ['text-[#444444]', 'hover:underline']
+        return ['text-[#444444]', 'hover:underline', 'font-semibold']
     })
 </script>
 
@@ -13,14 +13,14 @@
         bg-[#f2f2f2]
     -->
     <div class="menu">
-        <div class="primary-menu relative bg-[url('../../public/assets/images/general/tree-1.png')] h-[200px] bg-[-640px_-760px] bg-no-repeat">
+        <div class="primary-menu relative bg-[url('/assets/images/general/tree-1.png')] h-[200px] bg-[-640px_-760px] bg-no-repeat">
             <p class="app-slogan flex justify-center items-center text-white">Ons Plek - Indawo Yethu</p>
         </div>
         <div class="second-menu py-4 flex items-center justify-center border-b border-t-[15px] border-t-black border-b-[#e6e6e6]">
             <!-- <div class="logo w-[10%]">
-                <img src="../../public/assets/images/general/tlc-hair.png" alt="TLC Hair" class="w-[150px]" />
-            </div>
-         -->
+                    <img src="/assets/images/general/tlc-hair.png" alt="TLC Hair" class="w-[150px]" />
+                </div>
+            -->
             <nav class="navigation">
                 <ul class="menu-list flex font-normal">
                     <li class="menu-list__item" :class="listElemStyle">

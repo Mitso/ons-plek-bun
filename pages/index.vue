@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
     const { data } = await useFetch('/api/api')
     definePageMeta({
         name: 'Home'
@@ -12,13 +12,6 @@
 
 <template>
     <section class="home">
-        <!-- 
-            Server side rendered Page
-
-            1. Navigation 
-                a) For Client side rendered Routes => Component  
-        -->
-       
         <div class="content">
             <h1 class="title">Welcome to Ons Plek hub</h1>
             <p class="paragraph">Hello {{ data?.thing }}</p>
